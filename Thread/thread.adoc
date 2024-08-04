@@ -123,6 +123,8 @@ image:resources/ThreadSynchronization.png[thread synchronization]
 - static으로 선언한 객체를 여러 스레드에서 동시에 사용할 경우
 - in java : Lock, Executors, Concurrent 콜렉션, Atomic 변수
 
+== 동기화 문제
+
 Race Condition
 
 - 경쟁 상태 라고도 한다
@@ -192,7 +194,7 @@ No preemption(비선점)
 - 해결: 자원을 점유하고 있는 프로세스가 다른 자원을 요구할 때 점유하고
 있는 자원을 반납하고 , 요구한 자원을 사용하기 위해 기다리게 한다.
 
-해결방안들
+== 동기화 방법
 
 - Mutex(Mutual Exclusion을 구현하는 해결방법)
 - Peterson’s Solution(Mutual Exclusion을 구현하는 해결방법)
@@ -200,6 +202,7 @@ No preemption(비선점)
 - Banker’s Algorithm(Deadlock 해결 방법)
 
 == Thread Life Cycle
+
 image::https://www.baeldung.com/wp-content/uploads/2018/02/Life_cycle_of_a_Thread_in_Java.jpg["life cycle of a thread in Java"]
 
 == Thread Method
@@ -219,6 +222,7 @@ image::https://www.baeldung.com/wp-content/uploads/2018/02/Life_cycle_of_a_Threa
 대기 상태로 바뀐 스레드를 깨운다. notify() 는 객체의 모니터와 관련있는 단일 스레드를, notifyAll()은 모든 스레드를 깨운다.
 
 == Thread Pool
+
 image:resources/ThreadPool.png[thread pool]
 
 * 작업 수행을 기다리는 초기화된 유휴 스레드 모음입니다.
