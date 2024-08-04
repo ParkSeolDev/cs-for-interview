@@ -113,9 +113,7 @@ Thread vs Coroutine
 - 유니티에서 멀티스레드 방식 대신 코루틴을 쓰는 이유 :
 멀티스레드를 버그 없이 짜는 것은 매우 어렵기 때문
 
-== Thread
-
-Thread Synchronization
+== Thread Synchronization
 
 쓰레드 동기화를 하는 이유 : 원하는 값을 가져오기 위해
  예시
