@@ -13,8 +13,8 @@ Program Counter도 따로 할당 받는다
 
 각각의 Process는 Resource를 전부 독립적으로 할당 받지만, Thread는
 Register, Stack만 독립적으로 할당 받고(변수 처리 등을 위하여), Code,
-Data, File은 공유한다. 공유 영역에서는 System Call 호출 횟수가 적어지
-면서 자연스럽게 Context Switch도 덜 발생하므로 여러 개의 프로그램이
+Data, File은 공유한다. 공유 영역에서는 System Call 호출 횟수가 적어지면서
+자연스럽게 Context Switch도 덜 발생하므로 여러 개의 프로그램이
 멀티 쓰레드 형태로 동작할 때가 멀티 프로세스 형태로 동작할 때보다
 동기화에 더 유리하다
 
