@@ -74,9 +74,16 @@ image:resources/ManyToMany.png[many to many]
 - 동기화에 사용되는 함수-> join, abort, stop, mutex, semaphore 등
 
 * Java에서의 Threading
-- Thread 클래스를 직접 객체화하는 방법 (impleaments Runnable를 구현한 클래스 설계)
-- Thread를 상속한 클래스를 생성 (extends Thread)
+- Thread 클래스를 직접 객체화하는 방법 (impleaments Runnable를 구현한 클래스 설계) :
+Interface에 대한 multiple inheritance가 지원되고,
+구현된 후에도 해당 class의 확장이 가능하다.
+Instance 생성 후 바로 사용할 수 없고, 추가적인 Thread object가 요구된다.
+Runnable interface는 functional interface로써 Lambda로 구현 가능하다.
 
+- Thread를 상속한 클래스를 생성 (extends Thread) :
+multiple inheritance을 지원하지 않으므로, 다른 class로부터의 추가적인 확장이 불가능하다.
+Instance 생성 후 바로 실행할 수 있다.
+간단한 class라도 별도의 class 정의가 필요하다.
 
 == Thread vs Coroutine
 [%hardbreaks]
@@ -192,6 +199,9 @@ No preemption(비선점)
 - Semaphore(Deadlock 해결방법, 완벽하지는 않음)
 - Banker’s Algorithm(Deadlock 해결 방법)
 
+== Thread Life Cycle
+image::https://www.baeldung.com/wp-content/uploads/2018/02/Life_cycle_of_a_Thread_in_Java.jpg["life cycle of a thread in Java"]
+
 == Thread Pool
 image:resources/ThreadPool.png[thread pool]
 
@@ -213,3 +223,4 @@ image:resources/ProducerConsumerPattern.png[producer consumer pattern]
 
 == 참고
 nhnacademy @nhn-academy-marco 책임님의 simple-http-server
+@xtra72 수석님의 java-thread-programming
