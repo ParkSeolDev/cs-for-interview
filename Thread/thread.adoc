@@ -4,8 +4,7 @@
 일반적으로 한 프로그램은 하나의 쓰레드를 가지고 있다
 프로그램 환경에 따라 둘 이상의 쓰레드를 동시에 실행할 수 있다
 이를 멀티쓰레드(Multithread)라 한다
-쓰레드는 Code, Data, File, Register, Stack 부분을 할당 받는다 (Process와
-유사)
+쓰레드는 Code, Data, File, Register, Stack 부분을 할당 받는다 (Process와 유사)
 Program Counter도 따로 할당 받는다
 
 == MultiThread
