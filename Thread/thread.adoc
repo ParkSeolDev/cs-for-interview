@@ -115,8 +115,6 @@ Thread vs Coroutine
 
 == Thread Synchronization
 
-쓰레드 동기화를 하는 이유 : 원하는 값을 가져오기 위해
- 예시
 image:resources/ThreadSynchronization.png[thread synchronization]
 2개 이상의 쓰레드가 변수에 접근할 때, 동기화는 필수다
 
