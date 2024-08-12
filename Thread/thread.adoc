@@ -71,11 +71,6 @@ image:resources/ManyToMany.png[many to many]
 사용자 스레드와 커널 스레드의 매핑을 적절하게 조절한다.
 고 언어의 고루틴, 코틀린의 코루틴, 자바21의 가상 쓰레드에서 지원됨.
 
-* C#에서의 Threading
-- Thread 클래스를 이용하여 스레드 생성
-- 프로그램 자체에도 이미 스레드가 있다
-- 동기화에 사용되는 함수-> join, abort, stop, mutex, semaphore 등
-
 * Java에서의 Threading
 - Thread 클래스를 직접 객체화하는 방법 (impleaments Runnable를 구현한 클래스 설계) :
 Interface에 대한 multiple inheritance가 지원되고,
@@ -87,32 +82,6 @@ Runnable interface는 functional interface로써 Lambda로 구현 가능하다.
 multiple inheritance을 지원하지 않으므로, 다른 class로부터의 추가적인 확장이 불가능하다.
 Instance 생성 후 바로 실행할 수 있다.
 간단한 class라도 별도의 class 정의가 필요하다.
-
-== Thread vs Coroutine
-[%hardbreaks]
-
-* Coroutine
-- 여러 개의 entry point를 허용하여 실행 재개가 가능
-- 멈춤 시 돌아갈 위치 지정 (yield)
-- 서브루틴은 호출될 때마다 메소드의 처음부터 실행을 시작하고 리턴
-될 때 항상 호출자로 돌아간다
-- 코루틴은 이전 상태를 기억하고 있어서 호출 시 이전 호출에서 멈춘
-위치에서부터 다시 실행을 재개하게 된다
-- 멈출 때는 호출자로 돌아가는 대신 돌아갈 위치를 지정
-- 유니티에서 코루틴이 중요한 이유는 협력형 멀티태스킹을 구현하는
-용도로 사용되기 때문
-- 일종의 시분할 방식으로 여러 task가 하나의 cpu를 나눠쓰는 방식
-- 선점형 멀티태스킹과 달리 운영체제의 개입 없이 각 task가 독점적으로 cpu를 사용하고 사용이 끝나면 자발적으로 양보하는 방식
-
-Thread vs Coroutine
-
-* Thread와 Coroutine의 차이
-- Thread는 OS가 내부의 스케쥴러를 통해 선점방식으로 Switch한다
-- Coroutine은 사용자가 스스로 Switch할 수가 있다
-- Coroutine은 비동기가 아닌 동기(동시에 여러 개가 발생할 수 없다)
-- Multithread 처럼 여러 개를 비동기 형태로 발생시키는 것이 불가능
-- 유니티에서 멀티스레드 방식 대신 코루틴을 쓰는 이유 :
-멀티스레드를 버그 없이 짜는 것은 매우 어렵기 때문
 
 == Thread Synchronization
 
