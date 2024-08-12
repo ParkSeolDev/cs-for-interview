@@ -1,4 +1,4 @@
-== Lock
+== Lock in DB
 [%hardbreaks]
 
 == 페이지 잠금
