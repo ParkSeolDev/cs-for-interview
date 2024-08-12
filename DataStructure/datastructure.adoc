@@ -1,4 +1,4 @@
-== DataStructure
+== DataStructure in DB
 
 == 전체 Scan
 
