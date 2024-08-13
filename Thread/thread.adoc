@@ -180,8 +180,8 @@ image::https://www.baeldung.com/wp-content/uploads/2018/02/Life_cycle_of_a_Threa
 * 현재 진행 중인 스레드를 대기시키는 메서드
 - wait() : 모든 클래스의 부모 클래스인 Object 클래스에 선언되어 있으므로 어떤 클래스에서도 사용할 수 있다.
 명시된 시간만큼 해당 스레드를 대기시킨다. 만약 아무런 매개변수를 지정하지 않으면 notify() 메서드 혹은 notifyAll() 메서드가
-호출될 때까지 대기한다.
-- sleep() : 명시된 시간만큼 해당 스레드를 대기시킨다.
+호출될 때까지 대기한다. synchronized 블럭 빠져 나옴
+- sleep() : 명시된 시간만큼 해당 스레드를 대기시킨다. synchronized 안 나옴. 혼자 돔
 - join() : 명시된 시간만큼 해당 스레드가 죽기를 기다린다. 만약 아무런 매개변수를 지정하지 않으면 죽을 때까지 계속 대기한다.
 
 * interrupt(), notify(), notifyAll()
