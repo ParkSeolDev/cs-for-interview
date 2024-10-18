@@ -1,0 +1,18 @@
+== HTTP
+
+== 메서드
+
+=== GET
+=== POST
+=== PUT
+=== PATCH
+=== DELETE
+=== HEAD
+=== OPTIONS
+=== CONNECT
+=== TRACE
+
+== 스펙
+=== 메시지 구조
+=== 요청: 요청 메서드 + 경로 + HTTP 버전
+=== 응답: HTTP 버전 + 상태 코드 + 상태 메시지
