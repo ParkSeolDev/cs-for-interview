@@ -1,6 +1,6 @@
 == DataStructure in DB
 
-== 전체 Scan
+== Full Scan
 
 == Range Scan
 

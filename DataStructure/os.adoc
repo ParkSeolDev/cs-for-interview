@@ -2,5 +2,5 @@
 
 == Loader
 
-== Cache
+== Caching
 

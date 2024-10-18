@@ -1,0 +1,8 @@
+== RestTemplate
+=== 동기 + 블로킹
+== WebClient
+=== 비동기 + 논블로킹 (필요 시 블로킹 가능)
+== RestClient
+=== 동기 + 블로킹
+== FeignClient
+=== 동기 + 블로킹 (비동기 가능)
