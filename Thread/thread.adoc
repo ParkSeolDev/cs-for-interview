@@ -169,7 +169,6 @@ No preemption(비선점)
 - Peterson’s Solution: 2 스레드 한정
 - Banker’s Algorithm: 데드락 회피(최대 수요를 알 때 사용), 잠금 타임아웃/재시도, 작은 락 범위에 사용
 
-(실전)
 - Mutex: 오직 1개만 들어갈 수 있는 짧은 크리티컬 섹션
 - Semaphore(카운팅): 동일 자원 N개 Mutex (ex. DB 커넥션 풀, 동시 작업 제한)
 - Spinlock: 아주 짧은 임계영역 + 커널/런타임 전환 비용이 더 큰 환경에서 사용
